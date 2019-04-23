@@ -11,6 +11,6 @@ int main() {
     Int d(move(c));
     a = b;
     a = move(d);
-    
+
     return 0;
 }
