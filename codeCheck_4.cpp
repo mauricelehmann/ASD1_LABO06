@@ -17,6 +17,7 @@ int main() {
 
   cout << "Contenu pile \n";
   cout << pile1 << endl << endl;
+
   {
     cout << "Test constructeur de copie \n";
     Pile<Int> pile2 = pile1;
@@ -40,4 +41,5 @@ int main() {
   cout << pile1 << endl << endl;  // test contenu pile
 
   cout << "Test destructeur 2\n";
+
 } // test destruction de pile2

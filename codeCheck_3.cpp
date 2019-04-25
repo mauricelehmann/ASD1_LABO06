@@ -1,6 +1,6 @@
 
 #include "Mouchard.h"
-
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -14,8 +14,11 @@ int main() {
     *dcInt = *ccInt ;
     *mcInt = move(*dcInt);
 
+    cout << endl;
+    cout << "size of Int : " << sizeof(Int) << endl;
     for (size_t i = 0; i < 4; i++) {
-        delete(p+i) ;
+        cout << p + i<< " : " << *(p + i) << endl;
+        //delete(p+i) ;
     }
     ::operator delete(p);
 }
